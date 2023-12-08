@@ -3,4 +3,10 @@ window.onload = function() {
   if (carName) {
     document.querySelector('.car-name h1').innerText = carName;
   }
+
+  var priceCar = localStorage.getItem('selectedPriceCar');
+  if (priceCar) {
+    document.querySelector('.price h1').innerText = priceCar
+  }
 };
+

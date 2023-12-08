@@ -25,18 +25,13 @@ body {
 
 .nav-top-left {
   display: flex;
+  align-items: center;
   margin-left: 60px;
 }
 
-.nav-top-left a {
-  text-decoration: none;
-  font-family: Plus Jakarta Sans;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: -0.96px;
-  color: var(--primary-500, #3563E9);
+.nav-top-left a img {
+  width: 200px;
+  height: 200px;
 }
 
 .nav-top-left .search-btn {
@@ -343,7 +338,7 @@ body {
   margin-top: 30px;
 }
 
-.catalog-1, .catalog-2 {
+.catalog-1, .catalog-2, catalog-3, .catalog-4 {
   width: 304px;
   height: 344px;
   border-radius: 10px;
@@ -461,6 +456,10 @@ body {
   height: 44px;
   border-radius: 4px;
   background: var(--primary-500, #3563E9);
+}
+
+.btn-rental button:hover {
+  background: var(--primary-500, #3562e9b7);
 }
 
 .btn-rental a {

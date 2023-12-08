@@ -24,8 +24,8 @@ function checkInformation() {
     !cardNumber ||
     !cardHolder ||
     !cvc ||
-    !expirationDate||
-    !agreementCheckbox.checked||
+    !expirationDate ||
+    !agreementCheckbox.checked ||
     !privacyCheckbox.checked
   ) {
     // Display the notification
@@ -34,3 +34,19 @@ function checkInformation() {
     alert("Success");
   }
 }
+
+window.onload = function () {
+  var carName = localStorage.getItem('selectedCarName');
+  if (carName) {
+    document.querySelector('.car-name h1').innerText = carName;
+  }
+  var priceCar = localStorage.getItem("selectedPriceCar");
+  if (priceCar) {
+    var subtotalElement = document.querySelector(".subtotal h5");
+    var totoalPriceCar = document.querySelector(".total-price h2");
+    if (subtotalElement) {
+      subtotalElement.innerText = priceCar;
+      totoalPriceCar.innerText = priceCar;
+    }
+  }
+};
